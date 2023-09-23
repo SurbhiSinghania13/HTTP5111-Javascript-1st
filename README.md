@@ -19,4 +19,4 @@ A repo of course 5111 which contains the code of javascript.
     } else { 
         alert("Please enter a number between 1 and 7!"); // this runs if user enter anything rather than a number between 1-7
     }
-}
+  }
