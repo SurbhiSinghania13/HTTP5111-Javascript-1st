@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#output {
+    display: none;
+}
+
+.mood-selector {
+    margin-bottom: 20px;
+}
+
+#songList li:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#background {
+    background-size: cover;
+    width: 60vh;
+    height: 50vh;
+}
+
+.highlighted {
+    color: #007BFF;
+}

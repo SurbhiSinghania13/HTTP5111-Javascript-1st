@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Mood-based Playlist Generator</h1>
+
+        <!-- Dropdown for selecting mood -->
+        <label for="moodSelect">Choose a mood:</label>
+        <select id="moodSelect" onchange="changeMood()">
+
+            <!-- Initial disabled option -->
+            <option value="X" selected disabled>CHOOSE ONE</option>
+
+            <!-- Mood options -->
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="relaxed">Relaxed</option>
+        </select>
+    </div>
+
+    <!-- Section for displaying selected mood, song list, audio player, and background -->
+    <section id="output">
+
+        <!-- Display selected mood with associated JavaScript update -->
+        <h2>Selected Mood: <span id="selectedMood">Happy</span></h2>
+
+        <!-- Heading for the list of songs -->
+        <h3>Songs for the Selected Mood:</h3>
+
+        <!-- List to display songs dynamically -->
+        <ul id="songList"></ul>
+
+        <!-- Audio player with controls, loop, and autoplay -->
+        <audio controls loop autoplay id="audioPlayer">
+
+            <!-- Source element for audio file  -->
+            <source id="audioSource" src="" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <!-- Button to skip to the next song with associated JavaScript function -->
+        <button onclick="skipSong()">Skip</button>
+
+        <!-- Empty div for displaying background images related to the mood -->
+        <div class="background" id="background">
+        </div>
+    </section>
+
+</body>
+</html>
